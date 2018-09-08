@@ -15,14 +15,13 @@ alert(end)
 
 var word = prompt('Какие слова вам сделать с большой буквы? ');
 var wordEnd = '';
-var word  = word.unshift(" ");
 for(i = 0; i < word.length; i++){
     wordEnd += (word[i - 1] == " " || word[i - 1] == undefined) ? word[i].toUpperCase() : word[i];
 }
 var wordEnd = wordEnd.shift(0);
 alert(wordEnd);
 
-// Without first word
+// Another way  
 
 var ji = "yes gello ddsa";
 var ji = ji.replace(/\b\w/g, l => l.toUpperCase());
