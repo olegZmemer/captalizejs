@@ -8,7 +8,7 @@ var end1 = wordArray.join("");
 
 var end = firstLetter.toUpperCase() + end1;  
 
-// Noob
+// Noob only first word
 
 alert(end)
 
@@ -18,7 +18,7 @@ var wordEnd = '';
 for(i = 0; i < word.length; i++){
     wordEnd += (word[i - 1] == " " || word[i - 1] == undefined) ? word[i].toUpperCase() : word[i];
 }
-var wordEnd = wordEnd.shift(0);
+
 alert(wordEnd);
 
 // Another way  
@@ -40,5 +40,3 @@ function captalizee (){
 captalizee()
 
 // Ideal almost
-
-
